@@ -15,7 +15,7 @@ seo: # SEO values are used for OG and will overwrite 'title' and 'excerpt' above
 hero: graphic # options: carousel, graphic, video, split (text & image)
 heroSettings:
   height:
-    mobile: # options = h-1/1 (default = full screen), h-1/2, h-1/3, h-3/4, h-9/10, h-48 (12rem, 192px), h-56 (14rem, 224px), h-64 (16rem, 256px)
+    mobile: h-1/2 # options = h-1/1 (default = full screen), h-1/2, h-1/3, h-3/4, h-9/10, h-48 (12rem, 192px), h-56 (14rem, 224px), h-64 (16rem, 256px)
     desktop: # leave blank to inherit "mobile" height (default = full screen)
   bg:
     color: # default bg-black
@@ -32,7 +32,7 @@ heroSettings:
   buttonText: Contact Us... # no button generated if left blank
   buttonURL: /contact/ # full url required. Example: https://thisdomain.com/somepage/
   buttonTextColor: # leave blank to inherit from /src/_data/colors.buttonCustom or buttonDefault
-  buttonBgColor: # leave blank to inherit from /src/_data/colors.buttonCustom.bg or buttonDefault.bg
+  buttonBgColor: bg-teal-700 # leave blank to inherit from /src/_data/colors.buttonCustom.bg or buttonDefault.bg
   buttonBgHover: # leave blank to inherit from /src/_data/colors.buttonCustom.bgHover or buttonDefault.bgHover
   buttonBorder: # leave blank to inherit from /src/_data/colors.buttonCustom.border or buttonDefault.border
   carousel:

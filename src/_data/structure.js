@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	/** ===== Globals =====
 	 * In this section we can control Global structural items like
 	 * pageWidth, margins, paddings, etc.
@@ -8,7 +8,7 @@ module.exports = {
 	 * across the entire site so there is consistency on margins, padding, max width
 	 * at all screen sizes.
 	 */
-	g_pageWidth: 'max-w-screen-xl px-8 md:px-16 lg:px-32',
+	g_pageWidth: 'max-w-screen-lg px-8 md:px-16 lg:px-64', // max-w-screen-xl px-8 md:px-16 lg:px-32
 
 	/**
 	 * Globally disable display of Tag pills/links
@@ -38,7 +38,7 @@ module.exports = {
 	 *
 	 * Add and Manage Author data in src/_data/authors.json
 	 */
-	g_showAuthors: true,
+	g_showAuthors: false,
 
 	/**
 	 * ===== Display Footer & Social Share Icons =====
@@ -57,7 +57,7 @@ module.exports = {
 	 * if you want Facebook support you'll have to build it yourself.
 	 * https://deletefacebook.com/
 	 */
-	g_showSocialShareIcons: true,
+	g_showSocialShareIcons: false,
 	// Display individual Share Icons. Above must be 'true' for items below to display.
 	g_showShareLinkedIn: true,
 	g_showSharePinterest: true,
@@ -101,4 +101,4 @@ module.exports = {
 	 *
 	 */
 	tagListStyle: '',
-}
+};

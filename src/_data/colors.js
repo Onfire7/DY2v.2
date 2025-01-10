@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	/**
 	 * ************************ IMPORTANT *********************************
 	 *  A few colors for links, blockquotes, code, etc. are set in the
@@ -59,11 +59,11 @@ module.exports = {
 	 *  If you delete any variable keys, 11ty won't work.
 	 */
 	navCustom: {
-		barBg: '',
+		barBg: 'bg-blue-200',
 		text: 'text-gray-700',
 		textActive: 'text-gray-800',
 		textHover: 'text-gray-800',
-		textActiveBg: 'bg-gray-100',
+		textActiveBg: 'bg-blue-400',
 		textFocus: 'text-gray-500',
 		mobileBg: '',
 		mobileBgActive: 'bg-gray-700',

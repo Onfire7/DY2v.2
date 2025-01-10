@@ -5,6 +5,7 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const markdownIt = require('markdown-it')
 const markdownItEmoji = require('markdown-it-emoji')
 const pluginSvgSprite = require("eleventy-plugin-svg-sprite");
+const pluginImage = require("@11ty/eleventy-img");
 
 // const collections = require('./utils/collections.js')
 const filters = require('./utils/filters.js')
@@ -23,10 +24,28 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(syntaxHighlight)
 
 
-  eleventyConfig.addPlugin(pluginSvgSprite, {
-    path: "./src/assets/svg",
-    globalClasses: "fill-current"
+	eleventyConfig.addPlugin(pluginSvgSprite, {
+		path: "./src/assets/svg",
+		globalClasses: "fill-current"
 	})
+
+	eleventyConfig.addShortcode("image", async function (src, alt, widths = ["auto"], sizes = "") {
+		return pluginImage(src, {
+			widths,
+			formats: ["auto", "avif", "webp", "jpeg"],
+			outputDir: './dist/assets/images/',
+			urlPath: '/assets/images/',
+			returnType: "html",    // new in v6.0
+			htmlOptions: {         // new in v6.0
+				imgAttributes: {
+					alt,               // required, though "" works fine
+					sizes,             // required with more than one width, optional if single width output
+					loading: "lazy",   // optional
+					decoding: "async", // optional
+				}
+			}
+		});
+	});
 
 	/**
 	 * Filters
