@@ -1,5 +1,13 @@
 @tailwind base;
 
+body {
+	background-image: url('/assets/images/background.webp');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
 h1,
 h2,
 h3,

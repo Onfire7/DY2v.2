@@ -1,6 +1,6 @@
 <footer>
-  <div class="{{ colors.footerCustom.barBg or colors.footerDefault.barBg }}">
-    <div class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+  <div class="mx-8 md:mx-16 lg:mx-64 p-2 md:p-4 lg:p-8 {{ colors.footerCustom.barBg or colors.footerDefault.barBg }}">
+    <div class="sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
       <div class="flex justify-center md:order-2 {{ colors.socialIconsCustom or colors.socialIconsDefault }}">
         {% if structure.g_showFooterSocialIcons %}
 
@@ -17,7 +17,7 @@
       </div>
       <div class="mt-8 md:mt-0 md:order-1">
         <p class="text-center text-base leading-6 {{ colors.footerCustom.text or colors.footerDefault.text }}">
-          &copy; {{ build.timestamp | dateToFormat('yyyy') }}, {{ meta.siteName }}
+          &copy; {{ build.timestamp | dateToFormat('yyyy') }}, Discovery Years - Early Learning Center
         </p>
       </div>
     </div>
