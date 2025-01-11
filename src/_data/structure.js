@@ -8,7 +8,9 @@ export default {
 	 * across the entire site so there is consistency on margins, padding, max width
 	 * at all screen sizes.
 	 */
-	g_pageWidth: 'mx-8 md:mx-16 lg:mx-64 p-2 md:p-4 lg:p-8', // max-w-screen-xl px-8 md:px-16 lg:px-32
+	g_pageWidth: 'mx-2 md:mx-16 lg:mx-64 p-2 md:p-4 lg:p-8', // max-w-screen-xl px-8 md:px-16 lg:px-32
+	g_pageMargins: 'mx-2 md:mx-16 lg:mx-64',
+	g_pagePadding: 'p-2 md:p-4 lg:p-8',
 
 	/**
 	 * Globally disable display of Tag pills/links

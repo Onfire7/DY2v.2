@@ -1,4 +1,4 @@
-<div class="mx-8 md:mx-16 lg:mx-64 bg-white {{ heroSettings.height.mobile or "h-1/1" }} sm:{{ heroSettings.height.desktop or heroSettings.height.mobile or "h-1/1" }}">
+<div class="{{ structure.g_pageMargins }} bg-white {{ heroSettings.height.mobile or "h-1/1" }} sm:{{ heroSettings.height.desktop or heroSettings.height.mobile or "h-1/1" }}">
   <div class="h-full main-carousel" data-flickity='{"autoPlay": true, "lazyLoad":"1", "wrapAround":true}'>
 
     {% for image in heroSettings.carousel.images %}
